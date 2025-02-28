@@ -12,6 +12,7 @@
     outline: none;
     border: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,7 +21,6 @@ body {
     font-style: normal;
     background-color: var(--bg);
     color: white;
-    min-height: 200vh;
 }
 
 /* Navbar */
@@ -144,12 +144,64 @@ body {
 
 .hero .content a {
     margin-top: 1rem;
-    display: inline-block; /*biar bisa dikasih padding margin*/
+    display: inline-block;
+    /*biar bisa dikasih padding margin*/
     padding: 0.5rem 2rem;
     font-size: 1rem;
     color: white;
     background-color: #896500;
     border-radius: 0.5rem;
+}
+
+/* About Section */
+
+.about {
+    padding: 8rem 7%;
+}
+
+.about h2 {
+    font-size: 2.3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.about h2 span {
+    color: var(--primary);
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about .row .about-img {
+    display: flex;
+    flex: 1 1 15rem;
+}
+
+.about .row .about-img img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.about .row .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 28rem;
+    padding: 0;
+}
+
+.about .row .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 
@@ -159,6 +211,31 @@ body {
 @media (max-width: 1366px) {
     html {
         font-size: 75%;
+    }
+
+    .about .row .about-img {
+        display: flex;
+        flex: 1 1 15rem;
+    }
+
+    .about .row .content {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        flex: 1 1 50rem;
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 1366px) {
+    .about .row .about-img {
+        flex: 1 1 10rem;
+    }
+
+    .about .row .content {
+        flex: 1 1 45rem;
+        padding: 0;
     }
 }
 
@@ -190,14 +267,16 @@ body {
     .navbar .navbar-nav a {
         color: var(--bg);
         /* display block membuat element turun kebawah dari horizontal ke vertical */
-        display: block; 
+        display: block;
         margin: 1.5rem;
         padding: 0.5rem;
         font-size: 2rem;
     }
+
     .navbar .navbar-nav a::after {
         transform-origin: 0 0;
     }
+
     .navbar .navbar-nav a:hover::after {
         transform: scaleX(0.2);
     }
@@ -210,4 +289,3 @@ body {
         font-size: 55%;
     }
 }
-
