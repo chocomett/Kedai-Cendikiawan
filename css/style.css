@@ -296,6 +296,118 @@ body {
 
 }
 
+/* Contact Section */
+
+.contact {
+    padding: 8rem 7%;
+    min-height: 100vh;
+}
+
+.contact h2 {
+    font-size: 2.3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.contact h2 span {
+    color: var(--primary);
+}
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.contact .row .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #010101cc;
+    box-shadow: 0 0 1rem rgba(1, 1, 1, 0.5);
+}
+
+.contact .row .contact-info h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contact .row .contact-info p {
+    font-size: 1rem;
+    padding: 0;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+    font-weight: 200;
+}
+
+.contact .row .contact-info a {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid var(--black);
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+.contact .row .contact-info a:hover {
+    background-color:  #010101cc;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.contact .row .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 30rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #010101cc;
+    box-shadow: 0 0 1rem rgba(1, 1, 1, 0.5);
+}
+
+.contact .row .contact-form input,
+.contact .row .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary);
+    background-color: #010101cc;
+    color: white;
+}
+
+.contact .row .contact-form input::placeholder,
+.contact .row .contact-form textarea::placeholder {
+    color: white;
+}   
+
+.contact .row .contact-form button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid var(--black);
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}       
+
+.contact .row .contact-form button:hover {
+    background-color:  #010101cc;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}   
+
+
 
 
 /* Media Queries */
