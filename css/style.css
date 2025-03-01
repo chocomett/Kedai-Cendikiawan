@@ -188,7 +188,7 @@ body {
 .about .row .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     flex: 1 1 28rem;
     padding: 0;
 }
@@ -203,6 +203,76 @@ body {
     line-height: 1.6;
     font-weight: 400;
 }
+
+.menu {
+    padding: 8rem 7%;
+    min-height: 100vh;
+}
+
+.menu h2 {
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.menu h2 span {
+    color: var(--primary);
+}
+
+.menu p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 8rem;
+    line-height: 1.6;
+    font-weight: 200;
+}
+
+.menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.menu .row .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(1, 1, 1, 0.8);
+    box-shadow: 0 0 1rem rgba(1, 1, 1, 0.5);
+}
+
+.menu .row .menu-item img {
+    width: 60%;
+    border-radius: 1rem;
+}
+
+.menu .row .menu-item h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.menu .row .menu-item p {
+    font-size: 1rem;
+    padding: 0;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+    font-weight: 200;
+}
+
+.menu .row .menu-item a {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+}
+
 
 
 /* Media Queries */
