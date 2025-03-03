@@ -300,7 +300,6 @@ body {
 
 .contact {
     padding: 8rem 7%;
-    min-height: 100vh;
 }
 
 .contact h2 {
@@ -344,33 +343,21 @@ body {
     font-weight: 200;
 }
 
-.contact .row .contact-info a {
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    color: white;
-    border: 1px solid var(--black);
-    background-color: var(--primary);
-    border-radius: 0.5rem;
-    transition: 0.3s;
-}
-
-.contact .row .contact-info a:hover {
-    background-color:  #010101cc;
-    border: 1px solid var(--primary);
-    color: var(--primary);
-}
-
 .contact .row .contact-form {
     display: flex;
+    min-height: fit-content;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex: 1 1 30rem;
+    flex: 1 10 5rem;
     padding: 1rem;
     border-radius: 1rem;
-    background-color: #010101cc;
-    box-shadow: 0 0 1rem rgba(1, 1, 1, 0.5);
+    background-color: var(--primary);
+}
+
+.contact .row .contact-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .contact .row .contact-form input,
@@ -380,13 +367,14 @@ body {
     margin: 0.5rem 0;
     border-radius: 0.5rem;
     border: 1px solid var(--primary);
-    background-color: #010101cc;
-    color: white;
+    background-color: white;
+    color: rgb(0, 0, 0);
 }
 
 .contact .row .contact-form input::placeholder,
 .contact .row .contact-form textarea::placeholder {
-    color: white;
+    color: rgba(0, 0, 0, 0.71);
+    font-size: 1rem;
 }   
 
 .contact .row .contact-form button {
